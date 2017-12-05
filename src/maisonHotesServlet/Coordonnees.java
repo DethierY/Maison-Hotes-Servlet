@@ -40,6 +40,7 @@ public class Coordonnees extends HttpServlet {
 		String email = request.getParameter("email");
 		String telephone = request.getParameter("telephone");
 		String region = request.getParameter("region");
+		String fumeur = request.getParameter("fumeur");
 
 		Client client = new ClientImpl ();
 		client.setNom(nom);
@@ -47,6 +48,7 @@ public class Coordonnees extends HttpServlet {
 		client.setEmail(email);
 		client.setTelephone(telephone);
 		client.setRegion(region);
+		client.setFumeur(fumeur);
 		
 		
 		request.setAttribute("client", client);

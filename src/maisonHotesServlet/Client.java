@@ -17,4 +17,7 @@ public interface Client {
 		public String getRegion();
 		public void setRegion(String region);
 		
+		public String getFumeur();
+		public void setFumeur(String fumeur);
+		
 }

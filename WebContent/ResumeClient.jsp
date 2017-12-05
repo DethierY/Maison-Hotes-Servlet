@@ -6,7 +6,7 @@
 <head>
 	<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
     <link type="text/css" rel="stylesheet" href="css/commun.css" />
-    <linnk type="text/css" rel="Stylesheet" href="css/ResumeClient.css" />
+    <link type="text/css" rel="Stylesheet" href="css/ResumeClient.css" />
 
 	<meta http-equiv="Content-Type" content="text/html">
 <title>ResumeClient</title>
@@ -14,6 +14,10 @@
 <body>
 	<% Client client = (Client) request.getAttribute("client"); %>
 	
+	 <!--Bandeau avec photo de Normandie-->
+    <div class="backgroundImg">
+    </div>
+    
 	<header class="header">
         <!--texte de bienvenue-->
         <div class="adresse">
@@ -39,6 +43,14 @@
 				<p class="col s6 center couleur">Votre région: </p>
 				<p class="col s6 center"><%=client.getRegion() %></p>
 			</div>
+		</div>
+	</article>
+	
+	<article class="car-panel teal z-depth-3" id="options">
+		<div class="row">
+			<h2 class="center couleur">Options</h2>
+			<p class="col s6 center couleur">Fumeur:</p>
+			<p class="col s6 center"><%=client.getFumeur() %></p>
 		</div>
 	</article>
 

@@ -8,6 +8,7 @@ public class ClientImpl implements Client {
 	private String email;
 	private String telephone;
 	private String region;
+	private String fumeur;
 	
 	public String getNom() {
 		return nom;
@@ -48,6 +49,14 @@ public class ClientImpl implements Client {
 
 	public void setRegion(String region) {
 		this.region = region;
+	}
+	
+	public String getFumeur() {
+		return fumeur;
+	}
+
+	public void setFumeur(String fumeur) {
+		this.fumeur = fumeur;
 	}
 	
 }
