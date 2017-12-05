@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/normandie.css" />
+    <link type="text/css" rel="stylesheet" href="css/commun.css" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0" />
+    <title>Normandie</title>
+</head>
+
+<body>
+    <!--Bandeau avec photo de Normandie-->
+    <div class="backgroundImg">
+    </div>
+
+    <!--barre de menu-->
+    <nav id="nav">
+        <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="left hide-on-med-and-down">
+                <li><a href="index.html" class="menuPage">Manoir</a></li>
+                <li class="active"><a href="normandie.html" class="menuPage">Normandie</a></li>
+                <li><a href="reservation.html" class="menuPage">Réservation</a></li>
+            </ul>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#carte">Carte</a></li>
+                <li><a href="#carousel">Photos</a></li>
+                <li><a href="#video">Video</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li><a href="index.html" class="menuPage">Manoir</a></li>
+                <li class="active"><a href="normandie.html" class="menuPage">Normandie</a></li>
+                <li><a href="reservation.html" class="menuPage">Réservation</a></li>
+                <li><a href="#carousel">Photos</a></li>
+                <li><a href="#interieur">Intérieur</a></li>
+                <li><a href="#video">Video</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--titre de la page-->
+    <header class="header">
+        <!--adresse du manoir-->
+        <div class="adresse">
+            <div class="card-panel teal z-depth-3">
+                <h1>Bienvenue </br>en</br> Normandie</h1>
+            </div>
+            <p class="text">Une région d'histoire, de nature et d'art.</p>
+        </div>
+    </header>
+
+    <!--panneua de la video-->
+    <article class="card-panel teal z-depth-3" id="video">
+        <object alt="Vidéo présentant la Normandie">
+            <h2>Venez nous rendre visite!</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/AmrCH0AhbDg" frameborder="0" allowfullscreen></iframe>
+               
+            </div>
+         </object>
+    </article>
+
+    <!--carousel phoitos-->
+    <article class="row carousel" id="carousel">
+        <a class="carousel-item col s10 m7 l5" href="#one!"><img class="photo" src="photos/photos_normandie/photo_01.jpg" alt="vue aérienne des falaises d'Etretat"></a>
+        <a class="carousel-item col s10 m7 l5" href="#two!"><img class="photo" src="photos/photos_normandie/photo_02.jpg" alt="Vue aérienne du Mont St-Michel"></a>
+        <a class="carousel-item col s10 m7 l5" href="#three!"><img class="photo" src="photos/photos_normandie/photo_03.jpg" alt="Vue en contrebas du Gros horloge de Rouen"></a>
+        <a class="carousel-item col s10 m7 l5" href="#four!"><img class="photo" src="photos/photos_normandie/photo_04.jpg" alt="groupe de maison à colombages"></a>
+        <a class="carousel-item col s10 m7 l5" href="#five!"><img class="photo" src="photos/photos_normandie/photo_05.jpg" alt="Vue aérienne de Château Gaillard dans la brume"></a>
+        <a class="carousel-item col s10 m7 l5" href="#one!"><img class="photo" src="photos/photos_normandie/photo_06.jpg" alt="Vue aérienne du cimetière du débarquement"></a>
+        <a class="carousel-item col s10 m7 l5" href="#two!"><img class="photo" src="photos/photos_normandie/photo_07.jpg" alt="Entrée de la plage d'Utah Beach"></a>
+        <a class="carousel-item col s10 m7 l5" href="#three!"><img class="photo" src="photos/photos_normandie/photo_08.jpg" alt="Un pré avec des vaches normandes"></a>
+        <a class="carousel-item col s10 m7 l5" href="#two!"><img class="photo" src="photos/photos_normandie/photo_09.jpg" alt="Viur aérienne du bocage normand"></a>
+        <a class="carousel-item col s10 m7 l5" href="#three!"><img class="photo" src="photos/photos_normandie/photo_10.jpg" alt="Morceau de la tapisserie de Bayeux"></a>
+        <a class="carousel-item col s10 m7 l5" href="#five!"><img class="photo" src="photos/photos_normandie/photo_11.jpg" alt="Vue de la cour intérieure de l'Aître Saint-Maclou à Rouen"></a>
+    </article>
+
+    <!-- carte des transports en commun-->
+    <article class="card-panel teal z-depth-3" id="carte">
+        <h2>La Normandie peut se visiter de bien des manières!</h2>
+        <img class="image" src="photos/photos_normandie/normandie.jpg" />
+    </article>
+
+    <!--bouton de retour au menu-->
+    <div class="fixed-action-btn">
+        <a class=" btn-floating btn-large waves-effect waves-light z-depth-5 yellow darken-3" href="#nav"><i class="material-icons ">home</i></a>
+    </div>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".button-collapse").sideNav();
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('.carousel').carousel({});
+        });
+    </script>
+</body>
+
+</html>

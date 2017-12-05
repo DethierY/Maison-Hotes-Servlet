@@ -1,0 +1,36 @@
+article,
+a {
+    text-align: center;
+}
+
+h2 {
+    font-size: 5vW;
+    text-align: center;
+    color: #f9a825;
+}
+
+.carousel {
+    height: 70vh;
+}
+
+.carousel .carousel-item {
+    width: 494px;
+    height: 327px;
+}
+
+.image {
+    width: 100%;
+}
+
+.photo {
+    border: 2px solid #f9a825;
+}
+
+.retour {
+    color: #f9a825;
+    text-align: center;
+}
+
+.text {
+    font-size: 3vw;
+}

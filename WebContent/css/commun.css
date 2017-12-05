@@ -1,0 +1,63 @@
+linkCOlor {
+    color: #f9a825;
+}
+
+body {
+    background-color: #4caf50;
+}
+
+h1 {
+    font-size: 8vw;
+    color: #f9a825;
+}
+
+nav {
+    background-color: #f9a825;
+}
+
+.adresse {
+    text-align: center;
+}
+
+.adresse,
+p {
+    font-size: 1.2em;
+    font-weight: 10;
+}
+
+.backgroundImg {
+    background-image: url(../photos/photos_normandie/bandeau.jpg);
+    height: 55vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card-panel {
+    margin: 1em;
+}
+
+.header {
+    background-color: #4caf50;
+    text-align: center;
+}
+
+.buttonColor {
+    background-color: #f9a825;
+}
+
+.menuPage {
+    color: black !important;
+}
+
+.side-nav {
+    background-color: #f9a825;
+}
+
+.side-nav li>a {
+    color: #fff;
+}
+
+.teal {
+    background-color: #1b5e20 !important;
+}

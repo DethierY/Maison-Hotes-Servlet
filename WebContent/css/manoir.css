@@ -1,0 +1,24 @@
+h2 {
+    font-size: 2em;
+}
+
+.article_text {
+    background-color: #4caf50;
+    border: 2px solid #f9a825;
+    margin-bottom: 1em;
+}
+
+.drapeau {
+    width: 100%;
+    margin: auto;
+}
+
+.photo {
+    width: 100%;
+    border: 2px solid #f9a825;
+    margin-bottom: 1em;
+}
+
+.retour {
+    text-align: center;
+}
