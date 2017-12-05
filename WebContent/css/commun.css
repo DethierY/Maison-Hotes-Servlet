@@ -1,29 +1,27 @@
 linkCOlor {
     color: #f9a825;
 }
-
+/* couleur de fond des pages */
 body {
     background-color: #4caf50;
 }
 
+/* couleur de la barre de navigation*/
+nav {
+    background-color: #f9a825;
+}
+
+/* header*/
 h1 {
     font-size: 8vw;
     color: #f9a825;
 }
 
-nav {
-    background-color: #f9a825;
+header, p {
+	font-size: 1.7em;
+	font-weight: 10;
 }
 
-.adresse {
-    text-align: center;
-}
-
-.adresse,
-p {
-    font-size: 1.2em;
-    font-weight: 10;
-}
 
 .backgroundImg {
     background-image: url(../photos/photos_normandie/bandeau.jpg);
@@ -35,12 +33,6 @@ p {
 
 .card-panel {
     margin: 1em;
-}
-
-}
-.header {
-    background-color: #4caf50;
-    text-align: center;
 }
 
 .buttonColor {
