@@ -1,11 +1,19 @@
-linkCOlor {
-    color: #f9a825;
-}
 /**/
 /* COULEUR DE FOND */
 /**/
 body {
     background-color: #4caf50;
+}
+
+/**/
+/* BANDEAU HAUT DE PAGE*/
+/**/
+.backgroundImg {
+    background-image: url(../photos/photos_normandie/bandeau.jpg);
+    height: 55vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /**/
@@ -44,13 +52,8 @@ header, p {
 	font-weight: 10;
 }
 
-
-.backgroundImg {
-    background-image: url(../photos/photos_normandie/bandeau.jpg);
-    height: 55vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+linkCOlor {
+    color: #f9a825;
 }
 
 .card-panel {

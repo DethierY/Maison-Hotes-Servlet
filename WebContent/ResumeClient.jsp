@@ -14,18 +14,16 @@
 <body>
 	<% Client client = (Client) request.getAttribute("client"); %>
 	
-	 <!--Bandeau avec photo de Normandie-->
+	 <!--Bandeau haut de page-->
     <div class="backgroundImg">
     </div>
     
-	<header class="header">
-        <!--texte de bienvenue-->
-        <div class="adresse">
-            <div class="card-panel teal z-depth-3">
-                <h1>Résumé</h1>
-            </div>
-            <p class="text">Vérifiez vos informations</p>
+    <!-- Titre de la page -->
+	<header class="center">
+    	<div class="card-panel teal z-depth-3">
+            <h1>Résumé</h1>
         </div>
+            <p class="text">Vérifiez vos informations</p>
     </header>
     
 	<article class="card-panel teal z-depth-3" id="coordonnees">
