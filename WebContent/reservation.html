@@ -23,23 +23,28 @@
 	<!--barre de menu-->
 	<nav id="nav">
 	<div class="nav-wrapper">
-		<a href="#" data-activates="mobile-demo" class="button-collapse"><i
-			class="material-icons">menu</i></a>
+		<!-- menu burger pour portable -->
+		<a href="#" data-activates="mobile-demo" class="button-collapse menu">
+			<i class="material-icons menuPage">menu</i>
+		</a>
+		<!-- navigation dans le site -->
 		<ul class="left hide-on-med-and-down">
-			<li><a href="index.html" class="menuPage">Manoir</a></li>
-			<li><a href="normandie.html" class="menuPage">Normandie</a></li>
-			<li class="active"><a href="reservation.html" class="menuPage">Réservation</a></li>
+			<li><a href="index.html" class="menuSite">Manoir</a></li>
+			<li><a href="normandie.html" class="menuSite">Normandie</a></li>
+			<li class="active"><a href="reservation.html" class="menuSite">Réservation</a></li>
 		</ul>
+		<!--  navigation dans la page -->
 		<ul class="right hide-on-med-and-down">
-			<li><a href="#coordonnees">Coordonnées</a></li>
-			<li><a href="#options">Options</a></li>
+			<li><a href="#coordonnees" class="menuPage">Coordonnées</a></li>
+			<li><a href="#options" class="menuPage">Options</a></li>
 		</ul>
+		<!-- navigation sur portable -->
 		<ul class="side-nav" id="mobile-demo">
-			<li><a href="index.html" class="menuPage">Manoir</a></li>
-			<li class="active"><a href="normandie.html" class="menuPage">Normandie</a></li>
-			<li><a href="reservation.html" class="menuPage">Réservation</a></li>
-			<li><a href="#coordonnees">Coordonnées</a></li>
-			<li><a href="#options">Options</a></li>
+			<li><a href="index.html" class="menuSite">Manoir</a></li>
+			<li class="active"><a href="normandie.html" class="menuSite">Normandie</a></li>
+			<li><a href="reservation.html" class="menuSite">Réservation</a></li>
+			<li><a href="#coordonnees" class="menuPage">Coordonnées</a></li>
+			<li><a href="#options" class="menuPage">Options</a></li>
 		</ul>
 	</div>
 	</nav>

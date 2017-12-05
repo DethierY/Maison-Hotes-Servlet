@@ -1,17 +1,39 @@
 linkCOlor {
     color: #f9a825;
 }
-/* couleur de fond des pages */
+/**/
+/* BODY */
+/**/
 body {
     background-color: #4caf50;
 }
 
-/* couleur de la barre de navigation*/
+/**/
+/* NAV */
+/**/
 nav {
     background-color: #f9a825;
 }
 
-/* header*/
+.menuSite {
+    color: black !important;
+}
+
+.menuPage {
+	color: #1b5e20 !important;
+}
+
+.side-nav {
+    background-color: #f9a825;
+}
+
+.side-nav li>a {
+    color: #fff;
+}
+
+/**/
+/* HEADER */
+/**/
 h1 {
     font-size: 8vw;
     color: #f9a825;
@@ -37,18 +59,6 @@ header, p {
 
 .buttonColor {
     background-color: #f9a825;
-}
-
-.menuPage {
-    color: black !important;
-}
-
-.side-nav {
-    background-color: #f9a825;
-}
-
-.side-nav li>a {
-    color: #fff;
 }
 
 .teal {

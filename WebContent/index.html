@@ -22,24 +22,30 @@
     <!--barre de menu-->
     <nav id="nav">
         <div class="nav-wrapper">
-            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        	<!-- menu burger pour portable -->
+            <a href="#" data-activates="mobile-demo" class="button-collapse">
+            	<i class="material-icons menuPage">menu</i>
+            </a>
+            <!-- navigation sur le site -->
             <ul class="left hide-on-med-and-down">
-                <li class="active"><a href="index.html" class="menuPage">Manoir</a></li>
-                <li><a href="normandie.html" class="menuPage">Normandie</a></li>
-                <li><a href="reservation.html" class="menuPage">Réservation</a></li>
+                <li class="active"><a href="index.html" class=" active menuSite">Manoir</a></li>
+                <li><a href="normandie.html" class="menuSite">Normandie</a></li>
+                <li><a href="reservation.html" class="menuSite">Réservation</a></li>
             </ul>
+            <!-- navigation dans la page -->
             <ul class="right hide-on-med-and-down">
-                <li><a href="#exterieur">Extérieur</a></li>
-                <li><a href="#interieur">Intérieur</a></li>
-                <li><a href="#environnement">Environnement</a></li>
+                <li><a href="#exterieur" class="menuPage">Extérieur</a></li>
+                <li><a href="#interieur" class="menuPage">Intérieur</a></li>
+                <li><a href="#environnement" class="menuPage">Environnement</a></li>
             </ul>
+            <!-- navigation sur portables -->
             <ul class="side-nav" id="mobile-demo">
-                <li class="active"><a href="index.html" class="menuPage">Manoir</a></li>
-                <li><a href="normandie.html" class="menuPage">Normandie</a></li>
-                <li><a href="reservation.html" class="menuPage">Réservation</a></li>
-                <li><a href="#exterieur">Extérieur</a></li>
-                <li><a href="#interieur">Intérieur</a></li>
-                <li><a href="#environnement">Environnement</a></li>
+                <li class="active"><a href="index.html" class="menuSite">Manoir</a></li>
+                <li><a href="normandie.html" class="menuSite">Normandie</a></li>
+                <li><a href="reservation.html" class="menuSite">Réservation</a></li>
+                <li><a href="#exterieur" class="menuPage">Extérieur</a></li>
+                <li><a href="#interieur" class="menuPage">Intérieur</a></li>
+                <li><a href="#environnement" class="menuPage">Environnement</a></li>
             </ul>
         </div>
     </nav>
