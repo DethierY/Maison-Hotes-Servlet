@@ -1,8 +1,13 @@
+html {
+	font-size: 100%;
+}
+
 /**/
 /* COULEUR DE FOND */
 /**/
 body {
     background-color: #4caf50;
+    font-size: 1em;
 }
 
 /**/
@@ -39,6 +44,11 @@ nav {
     color: #fff;
 }
 
+.buttonColor {
+    background-color: #f9a825;
+}
+
+
 /**/
 /* HEADER */
 /**/
@@ -47,21 +57,36 @@ h1 {
     color: #f9a825;
 }
 
-header, p {
-	font-size: 1.7em;
-	font-weight: 10;
+.header_text {
+	font-size: 3vw;
 }
 
-linkCOlor {
-    color: #f9a825;
+
+/**/
+/* ARTICLES */
+/**/
+
+h2 {
+	font-size: 2em;
+	color: #f9a825;
+	text-align: center;
+	
+}
+.article_text {
+    background-color: #4caf50;
+    border: 2px solid #f9a825;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+
+.photo {
+    width: 100%;
+    border: 2px solid #f9a825;
+    margin-bottom: 1em;
 }
 
 .card-panel {
     margin: 1em;
-}
-
-.buttonColor {
-    background-color: #f9a825;
 }
 
 .teal {

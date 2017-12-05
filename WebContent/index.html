@@ -6,7 +6,6 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-    <link type="text/css" rel="stylesheet" href="css/manoir.css" />
     <link type="text/css" rel="stylesheet" href="css/commun.css" />
 
     <!--Let browser know website is optimized for mobile-->
@@ -36,7 +35,7 @@
             <ul class="right hide-on-med-and-down">
                 <li><a href="#exterieur" class="menuPage">Extérieur</a></li>
                 <li><a href="#interieur" class="menuPage">Intérieur</a></li>
-                <li><a href="#environnement" class="menuPage">Environnement</a></li>
+                <li><a href="#annexes" class="menuPage">Annexes</a></li>
             </ul>
             <!-- navigation sur portables -->
             <ul class="side-nav" id="mobile-demo">
@@ -45,7 +44,7 @@
                 <li><a href="reservation.html" class="menuSite">Réservation</a></li>
                 <li><a href="#exterieur" class="menuPage">Extérieur</a></li>
                 <li><a href="#interieur" class="menuPage">Intérieur</a></li>
-                <li><a href="#environnement" class="menuPage">Environnement</a></li>
+                <li><a href="#annexes" class="menuPage">Annexes</a></li>
             </ul>
         </div>
     </nav>
@@ -55,109 +54,97 @@
     	<div class="card-panel teal z-depth-3">
     		<h1>Manoir </br>de</br> Rocancourt-sur-Yvette</h1>
     	</div>
-            <p>234 chemin de la Forestière</p>
-            <p>27190 Rocancourt-sur-Yvette</p>
+            <p class="header_text">234 chemin de la Forestière</p>
+            <p class="header_text">27190 Rocancourt-sur-Yvette</p>
     </header>
 
     <!--panneau des vues eterieures-->
-    <article class="card-panel teal z-depth-3">
-        <div class="row">
-            <!--texte de présentation promotionnel-->
-            <div class="article_text z-depth-3 col s12 l2 ">
-                <h2 id="exterieur">Extérieur</h2>
-                <p>&emsp;Le charme opère dès que l'on s'en approche. </p>
-                <p>&emsp;Ce beau Manoir normand du xv ème siècle encore à l'état de ruine il y a quelques années, a su renaître avec l'amour de ses propriétaires.</p>
-                <p>&emsp;Les éléments anciens ont su être conservés tout en ajoutant la modernité de notre époque. Volumes et clarté sont les maîtres mots de ce superbe manoir.</p>
-            </div>
-            <!--container des photos-->
-            <div class="col s12 l10 ">
-                <!--photos-->
-                <div class="row ">
-                    <div class=" col s12 m6 l4 ">
-                        <img class="photo z-depth-4" src="photos/photos_manoir/vue_generale.jpg " alt="Première vue extérieure gauche de la façade du manoir " />
-                    </div>
-                    <div class=" col s12 m6 l4 ">
-                        <img class="photo z-depth-4" src="photos/photos_manoir/vue_ext_01.jpg " alt="Deuxième vue extérieure droite de la façade du manoir " />
-                    </div>
-                    <div class="col s12 m6 l4 ">
-                        <img class="photo z-depth-4" src="photos/photos_manoir/vue_ext_02.jpg " alt="Vue extérieure de la verrière du manoir " />
-                    </div>
-                    <div class="col s12 m6 l4 ">
-                        <img class="photo z-depth-4 " src="photos/photos_manoir/vue_ext_03.jpg " alt="Vue extérieure de la verrière, du jardin et de l 'allée du manoir" />
-                    </div>
-                </div>
-            </div>
+    <article class="card-panel teal z-depth-3 row">
+    	<!--texte de présentation promotionnel-->
+        <div class="article_text z-depth-3 col s12 l3">
+        	<h2 id="exterieur">Extérieur</h2>
+            <p>&emsp;Le charme opère dès que l'on s'en approche. </p>
+            <p>&emsp;Ce beau Manoir normand du xv ème siècle encore à l'état de ruine il y a quelques années, a su renaître avec l'amour de ses propriétaires.</p>
+            <p>&emsp;Les éléments anciens ont su être conservés tout en ajoutant la modernité de notre époque. Volumes et clarté sont les maîtres mots de ce superbe manoir.</p>
         </div>
+        <!--container des photos-->
+        <div class="col s12 l9">
+        	<!--photos-->
+            <div class="col s12 m6 l4">
+            	<img class="photo z-depth-4" src="photos/photos_manoir/vue_generale.jpg " alt="Première vue extérieure gauche de la façade du manoir " />
+           	</div>
+           	<div class="col s12 m6 l4">
+                <img class="photo z-depth-4" src="photos/photos_manoir/vue_ext_01.jpg " alt="Deuxième vue extérieure droite de la façade du manoir " />
+           	</div>
+           	<div class="col s12 m6 l4">
+                <img class="photo z-depth-4" src="photos/photos_manoir/vue_ext_02.jpg " alt="Vue extérieure de la verrière du manoir " />
+           	</div>
+           	<div class="col s12 m6 l4">
+                <img class="photo z-depth-4" src="photos/photos_manoir/vue_ext_03.jpg " alt="Vue extérieure de la verrière, du jardin et de l 'allée du manoir" />
+           	</div>
+    	</div>
     </article>
 
     <!--panneau des vues interieures-->
-    <article class="card-panel teal Z-depth-3">
-        <div class="row">
-            <!--texte de présentation promotionnel-->
-            <div class="article_text z-depth-3 col s12 l2">
-                <h2 id="interieur">Intérieur</h2>
-                <p>&emsp;Au rez-de-chaussée, un vaste hall lumineux dessert une cuisine A/E, un salon-séjour, un salon de réception sur sol en marbre.</p>
-                <p>&emsp;A l'étage, deux suites avec salle d'eau et salle de bain, ainsi que deux autres chambres et un grand bureau avec mezzanine.</p>
+    <article class="card-panel teal Z-depth-3 row">
+        <!--texte de présentation promotionnel-->
+        <div class="article_text z-depth-3 col s12 l3">
+            <h2 id="interieur">Intérieur</h2>
+            <p>&emsp;Au rez-de-chaussée, un vaste hall lumineux dessert une cuisine A/E, un salon-séjour, un salon de réception sur sol en marbre.</p>
+            <p>&emsp;A l'étage, deux suites avec salle d'eau et salle de bain, ainsi que deux autres chambres et un grand bureau avec mezzanine.</p>
+        </div>
+        <!--container des photos_vues interieures-->
+        <div class="col s12 l9">
+            <!--Photos-->
+            <div class="col s12 m6 l4">
+             	<img class="photo z-depth-4" src="photos/photos_manoir/vue_int_01.jpg" alt="vue du salon" />
             </div>
-            <!--container des photos_vues interieures-->
-            <div class="col s12 l10">
-                <div class="row">
-                    <!--Photos-->
-                    <div class="col s12 m6 l4">
-                        <img class="photo z-depth-4" src="photos/photos_manoir/vue_int_01.jpg" alt="vue du salon" />
-                    </div>
-                    <div class="col s12 m6 l4">
-                        <img class="photo z-depth-4" src="photos/photos_manoir/vue_int_02.jpg" alt="vue de la salle à manger" />
-                    </div>
-                    <div class="col s12 m6 l4">
-                        <img class="photo z-depth-4" src="photos/photos_manoir/vue_int_03.jpg" alt="vue du bureau" />
-                    </div>
-                    <div class="col s12 m6 l4">
-                        <img class="photo z-depth-4" src="photos/photos_manoir/vue_int_04.jpg" alt="vue de la cuisine" />
-                    </div>
-                    <div class="col s12 m6 l4">
-                        <img class="photo z-depth-4" src="photos/photos_manoir/vue_int_05.jpg" alt="vue de la chambre" />
-                    </div>
-                    <div class="col s12 m6 l4">
-                        <img class="photo z-depth-4" src="photos/photos_manoir/vue_int_06.jpg" alt="vue intérieure de la verrière" />
-                    </div>
-                </div>
+            <div class="col s12 m6 l4">
+                <img class="photo z-depth-4" src="photos/photos_manoir/vue_int_02.jpg" alt="vue de la salle à manger" />
+            </div>
+            <div class="col s12 m6 l4">
+                <img class="photo z-depth-4" src="photos/photos_manoir/vue_int_03.jpg" alt="vue du bureau" />
+            </div>
+            <div class="col s12 m6 l4">
+                <img class="photo z-depth-4" src="photos/photos_manoir/vue_int_04.jpg" alt="vue de la cuisine" />
+            </div>
+            <div class="col s12 m6 l4">
+                <img class="photo z-depth-4" src="photos/photos_manoir/vue_int_05.jpg" alt="vue de la chambre" />
+            </div>
+            <div class="col s12 m6 l4">
+                <img class="photo z-depth-4" src="photos/photos_manoir/vue_int_06.jpg" alt="vue intérieure de la verrière" />
             </div>
         </div>
     </article>
 
     <!--panneau des vues de l'environnement-->
-    <article class="card-panel teal Z-depth-3">
-        <div class="row">
-            <!--texte de présentation promotionnel-->
-            <div class="article_text z-depth-3 col s12 l2">
-                <h2 id="environnement">Environnement</h2>
-                <p>&emsp;A l'extérieur, l'ancienne maison de gardien transformée en maison d'amis, un bûcher, ainsi qu'une petite grange rénovée complètent cette belle propriété.</p>
-                <p>&emsp;Situé à l'abri des regards indiscrets mais non isolé, ce manoir jouit d 'un très bel emplacement, non loin d'un des plus beaux villages de France et de la mer, à seulement 25 min des grands centres villes.</p>
+    <article class="card-panel teal Z-depth-3 row">
+        <!--texte de présentation promotionnel-->
+        <div class="article_text z-depth-3 col s12 l3">
+        	<h2 id="annexes">Annexes</h2>
+            <p>&emsp;A l'extérieur, l'ancienne maison de gardien transformée en maison d'amis, un bûcher, ainsi qu'une petite grange rénovée complètent cette belle propriété.</p>
+            <p>&emsp;Situé à l'abri des regards indiscrets mais non isolé, ce manoir jouit d 'un très bel emplacement, non loin d'un des plus beaux villages de France et de la mer, à seulement 25 min des grands centres villes.</p>
+        </div>
+        <!--container des photos_vues environnement-->
+        <div class="col s12 l9">
+            <!--Photos-->
+            <div class="col s12 m6 l4">
+            	<img class="photo z-depth-4" src="photos/photos_manoir/vue_env_03.jpg" alt="vue du portail du manoir" />
             </div>
-            <!--container des photos_vues environnement-->
-            <div class="col s12 l10">
-                <div class="row">
-                    <!--Photos-->
-                    <div class="col s12 m6 l4">
-                        <img class="photo z-depth-4" src="photos/photos_manoir/vue_env_03.jpg" alt="vue du portail du manoir" />
-                    </div>
-                    <div class="col s12 m6 l4">
-                        <img class="photo z-depth-4" src="photos/photos_manoir/vue_env_01.jpg" alt="vue de la terrasse" />
-                    </div>
-                    <div class="col s12 m6 l4">
-                        <img class="photo z-depth-4" src="photos/photos_manoir/vue_env_02.jpg" alt="vue d'un vieux puit décorant le jardin" />
-                    </div>
-                    <div class="col s12 m6 l4">
-                        <img class="photo z-depth-4" src="photos/photos_manoir/vue_env_04.jpg" alt="vue de la première dépendance" />
-                    </div>
-                    <div class="col s12 m6 l4">
-                        <img class="photo z-depth-4" src="photos/photos_manoir/vue_env_06.jpg" alt="vue de la deuxième dépendance" />
-                    </div>
-                    <div class="col s12 m6 l4">
-                        <img class="photo z-depth-4" src="photos/photos_manoir/vue_env_05.jpg" alt="vue d'ensemble des deux dépendances" />
-                    </div>
-                </div>
+            <div class="col s12 m6 l4">
+                <img class="photo z-depth-4" src="photos/photos_manoir/vue_env_01.jpg" alt="vue de la terrasse" />
+            </div>
+            <div class="col s12 m6 l4">
+                <img class="photo z-depth-4" src="photos/photos_manoir/vue_env_02.jpg" alt="vue d'un vieux puit décorant le jardin" />
+            </div>
+            <div class="col s12 m6 l4">
+                <img class="photo z-depth-4" src="photos/photos_manoir/vue_env_04.jpg" alt="vue de la première dépendance" />
+            </div>
+            <div class="col s12 m6 l4">
+                <img class="photo z-depth-4" src="photos/photos_manoir/vue_env_06.jpg" alt="vue de la deuxième dépendance" />
+            </div>
+            <div class="col s12 m6 l4">
+                <img class="photo z-depth-4" src="photos/photos_manoir/vue_env_05.jpg" alt="vue d'ensemble des deux dépendances" />
             </div>
         </div>
     </article>
