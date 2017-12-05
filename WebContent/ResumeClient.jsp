@@ -8,7 +8,7 @@
     <link type="text/css" rel="stylesheet" href="css/commun.css" />
     <linnk type="text/css" rel="Stylesheet" href="css/ResumeClient.css" />
 
-	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html">
 <title>ResumeClient</title>
 </head>
 <body>
