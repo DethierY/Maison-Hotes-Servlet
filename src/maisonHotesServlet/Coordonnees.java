@@ -39,12 +39,15 @@ public class Coordonnees extends HttpServlet {
 		String prenom = request.getParameter("prenom");
 		String email = request.getParameter("email");
 		String telephone = request.getParameter("telephone");
+		String region = request.getParameter("region");
 
 		Client client = new ClientImpl ();
 		client.setNom(nom);
 		client.setPrenom(prenom);
 		client.setEmail(email);
 		client.setTelephone(telephone);
+		client.setRegion(region);
+		
 		
 		request.setAttribute("client", client);
 		getServletContext().getRequestDispatcher("/ResumeClient.jsp").forward(request, response);

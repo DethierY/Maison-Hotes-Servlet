@@ -13,4 +13,8 @@ public interface Client {
 		
 		public String getTelephone();
 		public void setTelephone(String telephone);
+		
+		public String getRegion();
+		public void setRegion(String region);
+		
 }
