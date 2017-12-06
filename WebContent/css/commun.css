@@ -1,5 +1,13 @@
+/**/
+/* GENERAL */
+/**/
+
 html {
 	font-size: 100%;
+}
+
+.fondJaune {
+	background-color: #f9a825;
 }
 
 /**/
@@ -22,11 +30,8 @@ body {
 }
 
 /**/
-/* MENU ET BOUTON RETOUR*/
+/* BARRE DE MENU*/
 /**/
-nav {
-    background-color: #f9a825;
-}
 
 .menuSite {
     color: black !important;
@@ -36,16 +41,8 @@ nav {
 	color: #1b5e20 !important;
 }
 
-.side-nav {
-    background-color: #f9a825;
-}
-
 .side-nav li>a {
     color: #fff;
-}
-
-.buttonColor {
-    background-color: #f9a825;
 }
 
 
@@ -61,7 +58,6 @@ h1 {
 	font-size: 3vw;
 }
 
-
 /**/
 /* ARTICLES */
 /**/
@@ -72,6 +68,16 @@ h2 {
 	text-align: center;
 	
 }
+
+.card-panel {
+    margin: 1em;
+}
+
+.teal {
+    background-color: #1b5e20 !important;
+}
+
+/* index.html*/
 .article_text {
     background-color: #4caf50;
     border: 2px solid #f9a825;
@@ -83,12 +89,4 @@ h2 {
     width: 100%;
     border: 2px solid #f9a825;
     margin-bottom: 1em;
-}
-
-.card-panel {
-    margin: 1em;
-}
-
-.teal {
-    background-color: #1b5e20 !important;
 }
