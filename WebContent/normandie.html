@@ -5,12 +5,12 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="all" />
     <link type="text/css" rel="stylesheet" href="css/normandie.css" />
     <link type="text/css" rel="stylesheet" href="css/commun.css" />
 
     <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8"/>
     <title>Normandie</title>
 </head>
 
@@ -20,32 +20,32 @@
     </div>
 
     <!--barre de menu-->
-    <nav id="nav">
+    <nav class="yellow darken-3" id="nav">
         <div class="nav-wrapper">
         	<!-- menu burger pour portable -->
             <a href="#" data-activates="mobile-demo" class="button-collapse">
             	<i class="material-icons menuPage">menu</i>
-           	</a>
-           	<!-- navigation sur le site -->
+            </a>
+            <!-- navigation sur le site -->
             <ul class="left hide-on-med-and-down">
-                <li><a href="index.html" class="menuSite">Manoir</a></li>
+                <li><a href="index.html" class=" active menuSite">Manoir</a></li>
                 <li class="active"><a href="normandie.html" class="menuSite">Normandie</a></li>
                 <li><a href="reservation.html" class="menuSite">Réservation</a></li>
             </ul>
             <!-- navigation dans la page -->
             <ul class="right hide-on-med-and-down">
-                <li><a href="#carte" class="menuPage">Carte</a></li>
-                <li><a href="#carousel" class="menuPage">Photos</a></li>
-                <li><a href="#video" class="menuPage">Video</a></li>
+                <li><a href="#exterieur" class="menuPage">Extérieur</a></li>
+                <li><a href="#interieur" class="menuPage">Intérieur</a></li>
+                <li><a href="#annexes" class="menuPage">Annexes</a></li>
             </ul>
             <!-- navigation sur portables -->
-            <ul class="side-nav" id="mobile-demo">
+            <ul class="side-nav yellow darken-3" id="mobile-demo">
                 <li><a href="index.html" class="menuSite">Manoir</a></li>
                 <li class="active"><a href="normandie.html" class="menuSite">Normandie</a></li>
                 <li><a href="reservation.html" class="menuSite">Réservation</a></li>
-                <li><a href="#carousel" class="menuPage">Photos</a></li>
+                <li><a href="#exterieur" class="menuPage">Extérieur</a></li>
                 <li><a href="#interieur" class="menuPage">Intérieur</a></li>
-                <li><a href="#video" class="menuPage">Video</a></li>
+                <li><a href="#annexes" class="menuPage">Annexes</a></li>
             </ul>
         </div>
     </nav>
@@ -53,24 +53,22 @@
     <!--Titre de la page-->
     <header class="center">
     	<div class="card-panel teal z-depth-3">
-        	<h1>Bienvenue </br>en</br> Normandie</h1>
-        </div>
-        <p>Une région d'histoire, de nature et d'art.</p>
+    		<h1>Bienvenue <br/>en<br/> Normandie</h1>
+    	</div>
+            <p class="header_text">Une région d'histoire, de nature et d'art</p>
     </header>
 
     <!--panneua de la video-->
     <article class="card-panel teal z-depth-3" id="video">
-        <object alt="Vidéo présentant la Normandie">
-            <h2>Venez nous rendre visite!</h2>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/AmrCH0AhbDg" frameborder="0" allowfullscreen></iframe>
-               
-            </div>
-         </object>
+    	<h2>Venez nous rendre visite!</h2>
+        <div class="video-container">
+        	<iframe width="560" height="315" src="https://www.youtube.com/embed/AmrCH0AhbDg"></iframe>
+        </div>
     </article>
 
     <!--carousel phoitos-->
-    <article class="row carousel" id="carousel">
+    <article class="row carousel center" id="carousel">
+    	<h2>la Normandie en images</h2>
         <a class="carousel-item col s10 m7 l5" href="#one!"><img class="photo" src="photos/photos_normandie/photo_01.jpg" alt="vue aérienne des falaises d'Etretat"></a>
         <a class="carousel-item col s10 m7 l5" href="#two!"><img class="photo" src="photos/photos_normandie/photo_02.jpg" alt="Vue aérienne du Mont St-Michel"></a>
         <a class="carousel-item col s10 m7 l5" href="#three!"><img class="photo" src="photos/photos_normandie/photo_03.jpg" alt="Vue en contrebas du Gros horloge de Rouen"></a>
@@ -87,7 +85,7 @@
     <!-- carte des transports en commun-->
     <article class="card-panel teal z-depth-3" id="carte">
         <h2>La Normandie peut se visiter de bien des manières!</h2>
-        <img class="image" src="photos/photos_normandie/normandie.jpg" />
+        <img class="photo" src="photos/photos_normandie/normandie.jpg" alt="carte représentant les différants modes de transports collectifs en Normandie"/>
     </article>
 
     <!--bouton de retour au menu-->
@@ -98,8 +96,8 @@
     </div>
 
     <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>
     <script>
         $(document).ready(function() {
             $(".button-collapse").sideNav();

@@ -84,8 +84,24 @@ h2 {
 figure {
 	margin: 1em 0px;
 }
+
 .photo {
     width: 100%;
     border: 2px solid #f9a825;
     margin-bottom: 1em;
+}
+
+/* normandie.html*/
+iframe {
+	border: 0;
+	border: 2px solid #f9a825;
+}
+
+.carousel {
+    height: 70vh;
+}
+
+.carousel .carousel-item {
+    width: 494px;
+    height: 327px;
 }
