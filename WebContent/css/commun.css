@@ -73,7 +73,9 @@ h2 {
     background-color: #1b5e20 !important;
 }
 
+/**/
 /* index.html*/
+/**/
 .article_text {
     background-color: #4caf50;
     border: 2px solid #f9a825;
@@ -91,7 +93,9 @@ figure {
     margin-bottom: 1em;
 }
 
+/**/
 /* normandie.html*/
+/**/
 iframe {
 	border: 0;
 	border: 2px solid #f9a825;
@@ -104,4 +108,141 @@ iframe {
 .carousel .carousel-item {
     width: 494px;
     height: 327px;
+}
+
+/**/
+/* réservation */
+/**/
+
+/* couleur ecriture dans les champs de formulaire */
+.couleurFormulaire {
+	color: #4caf50;
+}
+
+/* couleur du label des champs */
+.input-field label {
+	color: #f9a825;
+}
+
+/* couleur de l'icone des champs */
+.input-field .prefix {
+    color: #f9a825;
+}
+
+/* couleur du soulignage des champs text */
+.input-field input[type=text] {
+	border-bottom: 1px solid #f9a825;
+    box-shadow: 0 1px 0 0 #f9a825;
+}
+
+/* couleur du soulignage des champs text */
+.input-field input[type=email] {
+    border-bottom: 1px solid #f9a825;
+    box-shadow: 0 1px 0 0 #f9a825;
+}
+
+/* couleur du soulignage des champs text */
+.input-field input[type=tel] {
+    border-bottom: 1px solid #f9a825;
+    box-shadow: 0 1px 0 0 #f9a825;
+}
+
+/* couleur du label de text focus */
+.input-field input[type=text]:focus+label {
+	color: #4caf50 !important;
+}
+
+/* couleur du label de email focus */
+.input-field input[type=email]:focus+label {
+	color: #4caf50 !important;
+}
+
+/* couleur du label de telephone focus */
+.input-field input[type=tel]:focus+label {
+	color: #4caf50 !important;
+}
+
+/* couleur de l'icône focus */
+.input-field .prefix.active {
+	color: #4caf50;
+}
+
+/* couleur soulignage champs texte focus */
+.input-field input[type=text]:focus, 
+.materialize-textarea:focus:not([readonly]) {
+	border-bottom: 1px solid #4caf50 !important;
+    box-shadow: 0 1px 0 0 #4caf50 !important;
+}
+
+/* couleur soulignage champs email focus */
+.input-field input[type=email]:focus,
+.materialize-textarea:focus:not([readonly]) {
+	border-bottom: 1px solid #4caf50 !important;
+    box-shadow: 0 1px 0 0 #4caf50 !important;
+}
+
+/* soulignage champs telephone focus */
+  
+.input-field input[type=tel]:focus,
+.materialize-textarea:focus:not([readonly]) {
+	border-bottom: 1px solid #4caf50 !important;
+    box-shadow: 0 1px 0 0 #4caf50 !important;
+}
+
+/* colorisation des checkbox */ 
+.checkbox-yellow[type="checkbox"]+label:before {
+	border: 2px solid #f9a825;
+    background: transparent;
+}
+
+.checkbox-yellow[type="checkbox"]:checked+label:before {
+	border: 2px solid transparent;
+    border-bottom: 2px solid #f9a825;
+    border-right: 2px solid #f9a825;
+    background: transparent;
+}
+  
+.checkbox-yellow.filled-in[type="checkbox"]+label:after {
+    border: 2px solid #f9a825;
+    background: transparent;
+}
+  
+.checkbox-yellow.filled-in[type="checkbox"]:checked+label:after {
+    background: #f9a825;
+}
+  
+.checkbox-yellow.filled-in[type="checkbox"]:checked+label:before {
+	border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+/* colorisation des radio-button */
+.radio-yellow[type="radio"]+label:before {
+	border: 2px solid #f9a825;
+    background: transparent;
+}
+  
+.radio-yellow[type="radio"]:checked+label:before {
+	border: 2px solid transparent;
+    border-bottom: 2px solid #f9a825;
+   	border-right: 2px solid #f9a825;
+    background: transparent;
+}
+  
+.radio-yellow.filled-in[type="radio"]+label:after {
+    border: 2px solid #f9a825;
+    background: transparent;
+}
+  
+.radio-yellow.filled-in[type="radio"].with-gap:disabled:checked+label:after {
+    background: #f9a825;
+}
+  
+.radio-yellow.filled-in[type="radio"].with-gap:disabled:checked+label:before {
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
 }
