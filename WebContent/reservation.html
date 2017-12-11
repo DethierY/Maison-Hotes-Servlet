@@ -149,18 +149,28 @@
 			<h2>Séjour</h2>
 			<div class="form row">
 				<!--  formulaire: champ nombre de personnes -->
-				<div class="input-field col s12 l4">
-					<input id="nombre de personne" type="text" class="validate couleurFormulaire">
-					<label for="nombrePersonne">Nombre de personne</label>
-				</div>
-				<!-- formulaire: champ date d'arrivére -->
+				<select class="col s12 l4 couleurFormulaire" name="nbrePersonnes" required>
+						<option value="" disabled selected>0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+					</select>
+				 	<label>Nombre de personnes</label>
+				<!-- formulaire: champ date d'arrivée -->
 				<div class="input-field col s6 l4">
-					<input id="Date d'arrivée" type="text" class="validate couleurFormulaire">
-					<label for="dateArrivee">Date d'arrivée</label>
+					<input id="Date arrivee" type="text" class="datepicker" name="jourarrivee">
+        			<label for="dateArrivee">Date d'arrivée</label>
 				</div>
 				<!--  formulaire: cmap date de départ -->
 				<div class="input-field col s6 l4">
-					<input id="Date de départ" type="text" class="validate couleurFormulaire">
+					<input id="Date départ" type="text" class="datepicker" name="jourDepart">
 					<label for="dateDepart">Date de départ</label>
 				</div>
 			</div>
@@ -188,6 +198,15 @@
 		$(document).ready(function() {
 			$(".button-collapse").sideNav();
 			$('select').material_select();
+			$('.datepicker').pickadate({
+				selectMonths: true, // Creates a dropdown to control month
+			    selectYears: 15, // Creates a dropdown of 15 years to control year,
+			    format: 'dd/mm/yy', // choix du format de date ernvoyé
+			    today: 'Today',
+			    clear: 'Clear',
+			    close: 'Ok',
+			    closeOnSelect: false // Close upon selecting a date,
+			  });    
 		})
 	</script>
 	
