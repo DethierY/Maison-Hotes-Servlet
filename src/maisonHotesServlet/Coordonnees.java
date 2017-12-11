@@ -1,6 +1,9 @@
 package maisonHotesServlet;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -39,9 +42,18 @@ public class Coordonnees extends HttpServlet {
 		String prenom = request.getParameter("prenom");
 		String email = request.getParameter("email");
 		String telephone = request.getParameter("telephone");
-		String region = request.getParameter("region");
+		String regionPost = request.getParameter("region");
+		String region = verifRegion(regionPost);
+		String parkingPost = request.getParameter("parking");
+		String parking = checkBox(parkingPost);
+		String animalPost = request.getParameter("animal");
+		String animal = checkBox(animalPost);
 		String fumeur = request.getParameter("fumeur");
-
+		String nbrePersonnes = request.getParameter("nbrePersonnes");
+		String jourArrivee = request.getParameter("jourArrivee");
+		String nuitees = request.getParameter("nuitees");
+		
+		
 		Client client = new ClientImpl ();
 		client.setNom(nom);
 		client.setPrenom(prenom);
@@ -49,11 +61,42 @@ public class Coordonnees extends HttpServlet {
 		client.setTelephone(telephone);
 		client.setRegion(region);
 		client.setFumeur(fumeur);
+		client.setParking(parking);
+		client.setAnimal(animal);
+		client.setNbrePersonnes(nbrePersonnes);
+		client.setJourArrivee(jourArrivee);
+		client.setNuitees(nuitees);
 		
+		List<Client> listeClients = new ArrayList<> ();
 		
 		request.setAttribute("client", client);
+		listeClients.add(client);
+		
 		getServletContext().getRequestDispatcher("/ResumeClient.jsp").forward(request, response);
 		
+		
+		
 	}
-
+	private String checkBox (String choixCheckBox) {
+		String reponse;
+		if (choixCheckBox != null) {
+			reponse = "oui";
+		}
+		else {
+			reponse = "non";
+		}
+		return reponse;
+	}
+	
+	private String verifRegion (String reponseRegion) {
+		String reponse;
+		if (reponseRegion != null) {
+			reponse = reponseRegion;;
+		}
+		else {
+			reponse = "Non renseignée";
+		}
+		return reponse;
+	}
+	
 }

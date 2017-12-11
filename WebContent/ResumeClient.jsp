@@ -23,7 +23,7 @@
     	<div class="card-panel teal z-depth-3">
             <h1>Résumé</h1>
         </div>
-            <p class="text">Vérifiez vos informations</p>
+            <p class="header_text">Vérifiez vos informations</p>
     </header>
     
 	<article class="card-panel teal z-depth-3" id="coordonnees">
@@ -44,15 +44,27 @@
 		</div>
 	</article>
 	
-	<article class="car-panel teal z-depth-3" id="options">
+	<article class="card-panel teal z-depth-3" id="options">
 		<div class="row">
 			<h2 class="center couleur">Options</h2>
-			<p class="col S6 l3 couleur">Parking</p>
-			<p class="col s6 l3"><%=client.getParking() %></p>
-			<p class="col S6 l3 couleur">Animal</p>
-			<p class="col s6 l3"><%=client.getAnimal() %></p>
-			<p class="col s6 l3 couleur">Fumeur:</p>
-			<p class="col s6 l3"><%=client.getFumeur() %></p>
+			<p class="col S6 l2 couleur">Parking</p>
+			<p class="col s6 l2"><%=client.getParking() %></p>
+			<p class="col S6 l2 couleur">Animal</p>
+			<p class="col s6 l2"><%=client.getAnimal() %></p>
+			<p class="col s6 l2 couleur">Fumeur:</p>
+			<p class="col s6 l2"><%=client.getFumeur() %></p>
+		</div>
+	</article>
+	
+	<article class="card-panel teal z-depth-3" id="options">
+		<div class="row">
+			<h2 class="center couleur">Séjour</h2>
+			<p class="col S6 l2 couleur">Nombre de personnes:</p>
+			<p class="col s6 l2"><%=client.getNbrePersonnes() %></p>
+			<p class="col S6 l2 couleur">Date d'arrivée:</p>
+			<p class="col s6 l2"><%=client.getJourArrivee() %></p>
+			<p class="col s6 l2 couleur">Nombre de nuitées:</p>
+			<p class="col s6 l2"><%=client.getNuitees() %></p>
 		</div>
 	</article>
 

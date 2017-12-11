@@ -8,7 +8,12 @@ public class ClientImpl implements Client {
 	private String email;
 	private String telephone;
 	private String region;
+	private String parking;
+	private String animal;
 	private String fumeur;
+	private String nbrePersonnes;
+	private String jourArrivee;
+	private String nuitees;
 	
 	public String getNom() {
 		return nom;
@@ -59,4 +64,43 @@ public class ClientImpl implements Client {
 		this.fumeur = fumeur;
 	}
 	
+	public String getParking() {
+		return parking;
+	}
+
+	public void setParking(String parking) {
+		this.parking = parking;
+	}
+	
+	public String getAnimal() {
+		return animal;
+	}
+
+	public void setAnimal(String animal) {
+		this.animal = animal;
+	}
+
+	public String getNbrePersonnes() {
+		return nbrePersonnes;
+	}
+
+	public void setNbrePersonnes(String nbrePersonnes) {
+		this.nbrePersonnes = nbrePersonnes;
+	}
+	
+	public String getJourArrivee() {
+		return jourArrivee;
+	}
+
+	public void setJourArrivee(String jourArrivee) {
+		this.jourArrivee = jourArrivee;
+	}
+	
+	public String getNuitees() {
+		return nuitees;
+	}
+
+	public void setNuitees(String nuitees) {
+		this.nuitees = nuitees;
+	}
 }

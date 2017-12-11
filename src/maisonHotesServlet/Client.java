@@ -17,7 +17,21 @@ public interface Client {
 		public String getRegion();
 		public void setRegion(String region);
 		
+		public String getParking();
+		public void setParking(String parking);
+		
+		public String getAnimal();
+		public void setAnimal(String animal);
+		
 		public String getFumeur();
 		public void setFumeur(String fumeur);
 		
+		public String getNbrePersonnes();
+		public void setNbrePersonnes(String nbrePersonnes);
+		
+		public String getJourArrivee();
+		public void setJourArrivee(String jourArrivee);
+		
+		public String getNuitees();
+		public void setNuitees(String nuitees);		
 }
