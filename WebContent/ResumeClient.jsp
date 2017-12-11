@@ -1,16 +1,16 @@
 <%@page import="maisonHotesServlet.Client"%>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html>
 <head>
 	<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-    <link type="text/css" rel="stylesheet" href="css/commun.css" />
-    <link type="text/css" rel="Stylesheet" href="css/ResumeClient.css" />
+    <link type="text/css" rel="stylesheet" href="css/styleManoir.css" />
 
-	<meta http-equiv="Content-Type" content="text/html">
-<title>ResumeClient</title>
+	<meta charset="UTF-8"/>
+	
+	<title>ResumeClient</title>
 </head>
+
 <body>
 	<% Client client = (Client) request.getAttribute("client"); %>
 	
@@ -21,14 +21,14 @@
     <!-- Titre de la page -->
 	<header class="center">
     	<div class="card-panel teal z-depth-3">
-            <h1>Résumé</h1>
+            <h1>RÃ©sumÃ©</h1>
         </div>
-            <p class="text">Vérifiez vos informations</p>
+            <p class="text">VÃ©rifiez vos informations</p>
     </header>
     
 	<article class="card-panel teal z-depth-3" id="coordonnees">
 		<div class="row">
-			<h2 class="center couleur">Coordonnées</h2>
+			<h2 class="center couleur">CoordonnÃ©es</h2>
 			<p class="col s6 l3 couleur">Votre nom</p>
 			<p class="col s6 l3"><%=client.getNom() %></p>
 			<p class="col s6 l3 couleur">Votre adresse :</p>
@@ -38,7 +38,7 @@
 			<p class="col s6 l3 couleur">Votre telephone:</p>
 			<p class="col s6 l3"><%=client.getTelephone() %></p>
 			<div class="row class s6 l6 center">
-				<p class="col s6 center couleur">Votre région: </p>
+				<p class="col s6 center couleur">Votre rÃ©gion: </p>
 				<p class="col s6 center"><%=client.getRegion() %></p>
 			</div>
 		</div>
@@ -48,7 +48,7 @@
 		<div class="row">
 			<h2 class="center couleur">Options</h2>
 			<p class="col s6 center couleur">Fumeur:</p>
-			<p class="col s6 center"><%=client.getFumeur() %></p>
+			<p class="col s6 center "><%=client.getFumeur() %></p>
 		</div>
 	</article>
 
