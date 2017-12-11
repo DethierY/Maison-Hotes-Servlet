@@ -1,5 +1,5 @@
 <%@page import="maisonHotesServlet.Client"%>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -47,8 +47,12 @@
 	<article class="car-panel teal z-depth-3" id="options">
 		<div class="row">
 			<h2 class="center couleur">Options</h2>
-			<p class="col s6 center couleur">Fumeur:</p>
-			<p class="col s6 center "><%=client.getFumeur() %></p>
+			<p class="col S6 l3 couleur">Parking</p>
+			<p class="col s6 l3"><%=client.getParking() %></p>
+			<p class="col S6 l3 couleur">Animal</p>
+			<p class="col s6 l3"><%=client.getAnimal() %></p>
+			<p class="col s6 l3 couleur">Fumeur:</p>
+			<p class="col s6 l3"><%=client.getFumeur() %></p>
 		</div>
 	</article>
 
