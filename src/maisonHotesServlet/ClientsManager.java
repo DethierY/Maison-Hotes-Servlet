@@ -7,7 +7,7 @@ import java.util.Map;
 public class ClientsManager {
 	
 	private final static ClientsManager INSTANCE = new ClientsManager();
-	private final Map<String, Client> listeClients = new HashMap<String, Client>();
+	private final Map<String, Client> listeResas = new HashMap<String, Client>();
 	
 	private ClientsManager(){
 	}
@@ -16,13 +16,13 @@ public class ClientsManager {
 		return INSTANCE;
 	}
 	
-	public Map<String, Client> getListeClients(){
-		return listeClients;
+	public Map<String, Client> getListeResas(){
+		return listeResas;
 	}
 	
 	public void addClient (Client client) {
 		client.setDateResa (new Date());
-		listeClients.put(client.getResaId(), client);
+		listeResas.put(client.getResaId(), client);
 	}
 
 }

@@ -31,7 +31,9 @@ public class Gestion extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		request.setAttribute("tickets", ClientsManager.getInstance().getListeResas().values());
 		
+		getServletContext().getRequestDispatcher("/listeReservations.jsp").forward(request, response);
 	}
 
 	/**
@@ -69,6 +71,7 @@ public class Gestion extends HttpServlet {
 		
 		ClientsManager.getInstance().addClient(newClient);
 		
+		request.setAttribute("newClient", newClient);
 		getServletContext().getRequestDispatcher("/ResumeReservation.jsp").forward(request, response);
 	}
 	
