@@ -1,5 +1,7 @@
 package maisonHotesServlet;
 
+import java.util.Date;
+
 public class ClientImpl implements Client {
 
 	
@@ -14,6 +16,15 @@ public class ClientImpl implements Client {
 	private String nbrePersonnes;
 	private String jourArrivee;
 	private String nuitees;
+	private String resaId;
+	private Date dateResa;
+	
+	private static int compteur;
+	
+	public ClientImpl () {
+		resaId = Integer.toString(compteur);
+		compteur++;
+	}
 	
 	public String getNom() {
 		return nom;
@@ -102,5 +113,21 @@ public class ClientImpl implements Client {
 
 	public void setNuitees(String nuitees) {
 		this.nuitees = nuitees;
+	}
+	
+	public String getResaId() {
+		return resaId;
+	}
+	
+	public void setResaId(String resaId) {
+		this.resaId = resaId;
+	}
+	
+	public Date getDateResa() {
+		return dateResa;
+	}
+
+	public void setDateResa(Date dateResa) {
+		this.dateResa = dateResa;
 	}
 }

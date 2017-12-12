@@ -10,17 +10,18 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+
 /**
  * Servlet implementation class EssaisServlet
  */
-@WebServlet("/Coordonnees")
-public class Coordonnees extends HttpServlet {
+@WebServlet("/Gestion")
+public class Gestion extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Coordonnees() {
+    public Gestion() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -53,30 +54,24 @@ public class Coordonnees extends HttpServlet {
 		String jourArrivee = request.getParameter("jourArrivee");
 		String nuitees = request.getParameter("nuitees");
 		
+		Client newClient = new ClientImpl();
+		newClient.setNom(nom);
+		newClient.setPrenom(prenom);
+		newClient.setEmail(email);
+		newClient.setTelephone(telephone);
+		newClient.setRegion(region);
+		newClient.setFumeur(fumeur);
+		newClient.setParking(parking);
+		newClient.setAnimal(animal);
+		newClient.setNbrePersonnes(nbrePersonnes);
+		newClient.setJourArrivee(jourArrivee);
+		newClient.setNuitees(nuitees);
 		
-		Client client = new ClientImpl ();
-		client.setNom(nom);
-		client.setPrenom(prenom);
-		client.setEmail(email);
-		client.setTelephone(telephone);
-		client.setRegion(region);
-		client.setFumeur(fumeur);
-		client.setParking(parking);
-		client.setAnimal(animal);
-		client.setNbrePersonnes(nbrePersonnes);
-		client.setJourArrivee(jourArrivee);
-		client.setNuitees(nuitees);
+		ClientsManager.getInstance().addClient(newClient);
 		
-		List<Client> listeClients = new ArrayList<> ();
-		
-		request.setAttribute("client", client);
-		listeClients.add(client);
-		
-		getServletContext().getRequestDispatcher("/ResumeClient.jsp").forward(request, response);
-		
-		
-		
+		getServletContext().getRequestDispatcher("/ResumeReservation.jsp").forward(request, response);
 	}
+	
 	private String checkBox (String choixCheckBox) {
 		String reponse;
 		if (choixCheckBox != null) {

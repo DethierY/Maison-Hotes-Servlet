@@ -1,5 +1,7 @@
 package maisonHotesServlet;
 
+import java.util.Date;
+
 public interface Client {
 
 		public String getNom();
@@ -33,5 +35,11 @@ public interface Client {
 		public void setJourArrivee(String jourArrivee);
 		
 		public String getNuitees();
-		public void setNuitees(String nuitees);		
+		public void setNuitees(String nuitees);
+		
+		public String getResaId();
+		public void setResaId(String resaId);
+		
+		public Date getDateResa();
+		public void setDateResa(Date dateResa);
 }
