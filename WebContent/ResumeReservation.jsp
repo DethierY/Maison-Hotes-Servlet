@@ -69,7 +69,7 @@
 	</article>
 	
 	<div class="btn waves-effect waves-light">
-        <a  href="ListeReservations.jsp">Valider</a>
+        <a  href="Gestion">Valider</a>
     </div>
     <div class="btn waves-effect waves-light">
         <a href="reservation.html">Retour</a>

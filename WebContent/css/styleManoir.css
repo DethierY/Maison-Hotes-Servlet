@@ -248,10 +248,17 @@ iframe {
 }
 
 /**/
-/* resumeClient */
+/* resumeReservationt */
 /**/
 
 /* couleur de l'écriture */
 .couleur {
 	color: #f9a825;
 }
+
+/**/
+/* listereservations */
+/**/
+.resaTable {margin:30px auto;}
+.resaTable > tbody > tr > td {width:100px;}
+.resaTable > tbody > tr > td:nth-child(4){width:200px;}
