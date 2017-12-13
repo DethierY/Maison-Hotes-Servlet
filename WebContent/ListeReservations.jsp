@@ -36,9 +36,8 @@
 			SimpleDateFormat dateFormater = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 			Collection<Client> listeClients = (Collection<Client>) request.getAttribute("listeResas");
 			if(listeClients != null){
-				Iterator it = listeClients.iterator() ;
-			    while (it.hasNext()){
-			    	Client serveur=(Client) it.next() ;
+				for (Client serveur: listeClients) {
+
 		%>
 			<tr>
 				<td><%=serveur.getResaId() %></td>

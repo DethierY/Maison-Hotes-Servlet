@@ -1,6 +1,6 @@
 
 -- -----------------------------------------------------
--- Table `mydb`.`ListeReservations`
+-- Table `reservatoon,`.`ListeReservations`
 -- -----------------------------------------------------
 CREATE TABLE ListeReservations (
   `idListeReservations` INT NOT NULL AUTO_INCREMENT,
@@ -9,10 +9,10 @@ CREATE TABLE ListeReservations (
   `email` VARCHAR(45) NULL,
   `telephone` VARCHAR(45) NULL,
   `region` VARCHAR(45) NULL,
-  `parking` VARCHAR(3) NULL,
-  `animal` VARCHAR(3) NULL,
-  `fumeur` VARCHAR(10) NULL,
-  `nbrePersonnes` VARCHAR(2) NULL,
-  `jourArrivee` VARCHAR(8) NULL,
-  `nuitees` VARCHAR(2) NULL,
+  `parking` VARCHAR(45) NULL,
+  `animal` VARCHAR(45) NULL,
+  `fumeur` VARCHAR(45) NULL,
+  `nbrePersonnes` INT(11) NULL,
+  `jourArrivee` VARCHAR(45) NULL,
+  `nuitees` INT(11) NULL,
   PRIMARY KEY (`idListeReservations`));

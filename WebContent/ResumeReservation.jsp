@@ -30,16 +30,16 @@
 		<div class="row">
 			<h2 class="center couleur">Coordonnées</h2>
 			<p class="col s6 l3 couleur">Votre nom</p>
-			<p class="col s6 l3"><%=newClient.getNom() %></p>
+			<p class="col s6 l3"><%=newClient.getNom()%></p>
 			<p class="col s6 l3 couleur">Votre adresse :</p>
-			<p class="col s6 l3"><%=newClient.getPrenom() %></p>
+			<p class="col s6 l3"><%=newClient.getPrenom()%></p>
 			<p class="col s6 l3 couleur">Votre adresse mail:</p>
-			<p class="col s6 l3"><%=newClient.getEmail() %></p>
+			<p class="col s6 l3"><%=newClient.getEmail()%></p>
 			<p class="col s6 l3 couleur">Votre telephone:</p>
-			<p class="col s6 l3"><%=newClient.getTelephone() %></p>
+			<p class="col s6 l3"><%=newClient.getTelephone()%></p>
 			<div class="row class s6 l6 center">
 				<p class="col s6 center couleur">Votre région: </p>
-				<p class="col s6 center"><%=newClient.getRegion() %></p>
+				<p class="col s6 center"><%=newClient.getRegion()%></p>
 			</div>
 		</div>
 	</article>
@@ -48,11 +48,11 @@
 		<div class="row">
 			<h2 class="center couleur">Options</h2>
 			<p class="col S6 l2 couleur">Parking</p>
-			<p class="col s6 l2"><%=newClient.getParking() %></p>
+			<p class="col s6 l2"><%=newClient.getParking()%></p>
 			<p class="col S6 l2 couleur">Animal</p>
-			<p class="col s6 l2"><%=newClient.getAnimal() %></p>
+			<p class="col s6 l2"><%=newClient.getAnimal()%></p>
 			<p class="col s6 l2 couleur">Fumeur:</p>
-			<p class="col s6 l2"><%=newClient.getFumeur() %></p>
+			<p class="col s6 l2"><%=newClient.getFumeur()%></p>
 		</div>
 	</article>
 	
@@ -64,7 +64,7 @@
 			<p class="col S6 l2 couleur">Date d'arrivée:</p>
 			<p class="col s6 l2"><%=newClient.getJourArrivee()%></p>
 			<p class="col s6 l2 couleur">Nombre de nuitées:</p>
-			<p class="col s6 l2"><%=newClient.getNuitees() %></p>
+			<p class="col s6 l2"><%=newClient.getNuitees()%></p>
 		</div>
 	</article>
 	

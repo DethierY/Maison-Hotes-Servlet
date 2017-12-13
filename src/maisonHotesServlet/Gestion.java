@@ -87,15 +87,12 @@ public class Gestion extends HttpServlet {
 		newClient.setNuitees(nuitees);
 		
 		request.setAttribute("newClient", newClient);
-		try {
-			getServletContext().getRequestDispatcher("/ResumeReservation.jsp").forward(request, response);}
-		catch(JasperException e){
-			System.out.println(e);
-		} 
+		getServletContext().getRequestDispatcher("/ResumeReservation.jsp").forward(request, response);
 		
 		try {
 			database.connectionBase();
-		} catch (ClassNotFoundException e) {
+		}
+		catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}

@@ -78,6 +78,7 @@ public class DatabaseReservation {
 			dataClient.setNuitees(rs.getInt("nuitees"));
 			
 			ClientsManager.getInstance().addClient(dataClient);
+			System.out.println("lecture ok");
 			}
 		}
 		
