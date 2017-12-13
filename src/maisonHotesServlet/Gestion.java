@@ -8,6 +8,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.jasper.JasperException;
+
 
 /**
  * Servlet implementation class EssaisServlet
@@ -67,9 +69,9 @@ public class Gestion extends HttpServlet {
 		String animalPost = request.getParameter("animal");
 		String animal = checkBox(animalPost);
 		String fumeur = request.getParameter("fumeur");
-		String nbrePersonnes = request.getParameter("nbrePersonnes");
+		int nbrePersonnes = Integer.parseInt(request.getParameter("nbrePersonnes"));
 		String jourArrivee = request.getParameter("jourArrivee");
-		String nuitees = request.getParameter("nuitees");
+		int nuitees = Integer.parseInt(request.getParameter("nuitees"));
 		
 		Client newClient = new ClientImpl();
 		newClient.setNom(nom);
@@ -85,7 +87,11 @@ public class Gestion extends HttpServlet {
 		newClient.setNuitees(nuitees);
 		
 		request.setAttribute("newClient", newClient);
-		getServletContext().getRequestDispatcher("/ResumeReservation.jsp").forward(request, response);
+		try {
+			getServletContext().getRequestDispatcher("/ResumeReservation.jsp").forward(request, response);}
+		catch(JasperException e){
+			System.out.println(e);
+		} 
 		
 		try {
 			database.connectionBase();

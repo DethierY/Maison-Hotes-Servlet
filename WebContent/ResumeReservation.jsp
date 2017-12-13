@@ -60,9 +60,9 @@
 		<div class="row">
 			<h2 class="center couleur">Séjour</h2>
 			<p class="col S6 l2 couleur">Nombre de personnes:</p>
-			<p class="col s6 l2"><%=newClient.getNbrePersonnes() %></p>
+			<p class="col s6 l2"><%=newClient.getNbrePersonnes()%></p>
 			<p class="col S6 l2 couleur">Date d'arrivée:</p>
-			<p class="col s6 l2"><%=newClient.getJourArrivee() %></p>
+			<p class="col s6 l2"><%=newClient.getJourArrivee()%></p>
 			<p class="col s6 l2 couleur">Nombre de nuitées:</p>
 			<p class="col s6 l2"><%=newClient.getNuitees() %></p>
 		</div>

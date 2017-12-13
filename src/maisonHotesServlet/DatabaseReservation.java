@@ -32,7 +32,7 @@ public class DatabaseReservation {
 		System.out.println("connection fermée");
 	}
 	
-	public void ecritureBase(String nom, String prenom, String email, String telephone, String region, String parking, String animal, String fumeur, String nbrePersonnes, String jourArrivee, String nuitees) throws SQLException{
+	public void ecritureBase(String nom, String prenom, String email, String telephone, String region, String parking, String animal, String fumeur, int nbrePersonnes, String jourArrivee, int nuitees) throws SQLException{
 		
 		Statement statement = null;
 
@@ -73,9 +73,9 @@ public class DatabaseReservation {
 			dataClient.setParking(rs.getString("parking"));
 			dataClient.setAnimal(rs.getString("animal"));
 			dataClient.setFumeur(rs.getString("fumeur"));
-			dataClient.setNbrePersonnes(rs.getString("nbrePersonnes"));
+			dataClient.setNbrePersonnes(rs.getInt("nbrePersonnes"));
 			dataClient.setJourArrivee(rs.getString("jourArrivee"));
-			dataClient.setNuitees(rs.getString("nuitees"));
+			dataClient.setNuitees(rs.getInt("nuitees"));
 			
 			ClientsManager.getInstance().addClient(dataClient);
 			}

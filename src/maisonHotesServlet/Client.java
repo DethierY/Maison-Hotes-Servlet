@@ -28,14 +28,14 @@ public interface Client {
 		public String getFumeur();
 		public void setFumeur(String fumeur);
 		
-		public String getNbrePersonnes();
-		public void setNbrePersonnes(String nbrePersonnes);
+		public int getNbrePersonnes();
+		public void setNbrePersonnes(int nbrePersonnes);
 		
 		public String getJourArrivee();
 		public void setJourArrivee(String jourArrivee);
 		
-		public String getNuitees();
-		public void setNuitees(String nuitees);
+		public int getNuitees();
+		public void setNuitees(int nuitees);
 		
 		public String getResaId();
 		public void setResaId(String resaId);

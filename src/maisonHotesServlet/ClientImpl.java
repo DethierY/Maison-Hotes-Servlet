@@ -13,9 +13,9 @@ public class ClientImpl implements Client {
 	private String parking;
 	private String animal;
 	private String fumeur;
-	private String nbrePersonnes;
+	private int nbrePersonnes;
 	private String jourArrivee;
-	private String nuitees;
+	private int nuitees;
 	private String resaId;
 	private Date dateResa;
 	
@@ -91,11 +91,11 @@ public class ClientImpl implements Client {
 		this.animal = animal;
 	}
 
-	public String getNbrePersonnes() {
+	public int getNbrePersonnes() {
 		return nbrePersonnes;
 	}
 
-	public void setNbrePersonnes(String nbrePersonnes) {
+	public void setNbrePersonnes(int nbrePersonnes) {
 		this.nbrePersonnes = nbrePersonnes;
 	}
 	
@@ -107,11 +107,11 @@ public class ClientImpl implements Client {
 		this.jourArrivee = jourArrivee;
 	}
 	
-	public String getNuitees() {
+	public int getNuitees() {
 		return nuitees;
 	}
 
-	public void setNuitees(String nuitees) {
+	public void setNuitees(int nuitees) {
 		this.nuitees = nuitees;
 	}
 	
