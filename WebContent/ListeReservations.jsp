@@ -32,6 +32,7 @@
 			<th>nombre de nuitées</th>
 		</tr>
 		<%
+		
 			SimpleDateFormat dateFormater = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 			Collection<Client> listeClients = (Collection<Client>) request.getAttribute("listeResas");
 			if(listeClients != null){

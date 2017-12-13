@@ -2,9 +2,6 @@ package maisonHotesServlet;
 
 import java.io.IOException;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -28,12 +25,27 @@ public class Gestion extends HttpServlet {
     }
     
     DatabaseReservation database = new DatabaseReservation ();
-
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		
+		try {
+			database.connectionBase();
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		try {
+			database.lectureBase();
+			database.couperConnection();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 		request.setAttribute("listeResas", ClientsManager.getInstance().getListeResas().values());
 		
 		getServletContext().getRequestDispatcher("/ListeReservations.jsp").forward(request, response);
@@ -72,8 +84,6 @@ public class Gestion extends HttpServlet {
 		newClient.setJourArrivee(jourArrivee);
 		newClient.setNuitees(nuitees);
 		
-		ClientsManager.getInstance().addClient(newClient);
-		
 		request.setAttribute("newClient", newClient);
 		getServletContext().getRequestDispatcher("/ResumeReservation.jsp").forward(request, response);
 		
@@ -86,6 +96,7 @@ public class Gestion extends HttpServlet {
 		
 		try {
 			database.ecritureBase(nom, prenom, email, telephone, region, parking, animal, fumeur, nbrePersonnes, jourArrivee, nuitees);
+			database.couperConnection();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
