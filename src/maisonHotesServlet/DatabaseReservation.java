@@ -14,8 +14,6 @@ public class DatabaseReservation {
 	private static Connection connection;
 	
 	public void connectionBase() throws ClassNotFoundException{
-	
-		Connection connection;
 		
 		Class.forName("com.mysql.jdbc.Driver");
 		try {
@@ -23,23 +21,23 @@ public class DatabaseReservation {
 			System.out.println("connexion ok");
 		}
 		catch (SQLException e) {
-			System.out.println("An error occured trying to insert the new data !");
+			System.out.println("Error SQLException");
 		}
 		
 	}
 	
-	public void ecritureBase(String nom, String prenom, String email, String telephone, String region, String fumeur, String parking, String animal, String nbrePersonnes, String jourArrivee, String nuitees) throws SQLException{
+	public void ecritureBase(String nom, String prenom, String email, String telephone, String region, String parking, String animal, String fumeur, String nbrePersonnes, String jourArrivee, String nuitees) throws SQLException{
 		
 		Statement statement = null;
 
 		try {
 			statement = connection.createStatement();
-			String sql = "INSERT INTO apprenant (`nom`, prenom`, `email`, `telephone`, `region`, `fumeur`, `parking`, `animal`, `nbrePersonnes`, `jourArrivee`, `nuitees`) VALUES ('" + nom + "', '" + prenom + "' , '" + email + "' , '" + telephone + "', '" + region + "' , '" + fumeur + "', '" + parking + "', '" + animal + "', '" + nbrePersonnes + "', '" + jourArrivee + "', '" + nuitees + "')";
+			String sql = "INSERT INTO listereservations (`nom`, `prenom`, `email`, `telephone`, `region`, `parking`, `animal`, `fumeur`, `nbrePersonnes`, `jourArrivee`, `nuitees`) VALUES ('" + nom + "', '" + prenom + "' , '" + email + "' , '" + telephone + "', '" + region + "' , '" + parking + "', '" + animal + "', '" + fumeur + "', '" + nbrePersonnes + "', '" + jourArrivee + "', '" + nuitees + "')";
 			statement.executeUpdate(sql);
 			System.out.println("logiquement, écriture dans la table ok");
 		}
 		catch(SQLException e){
-			System.out.println("An error occured trying to insert the new data !");
+			System.out.println("Error SQLException");
 		}
 		finally{	 
 			statement.close();

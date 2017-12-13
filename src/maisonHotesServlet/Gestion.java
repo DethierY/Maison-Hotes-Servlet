@@ -76,6 +76,7 @@ public class Gestion extends HttpServlet {
 		
 		request.setAttribute("newClient", newClient);
 		getServletContext().getRequestDispatcher("/ResumeReservation.jsp").forward(request, response);
+		
 		try {
 			database.connectionBase();
 		} catch (ClassNotFoundException e) {
@@ -84,7 +85,7 @@ public class Gestion extends HttpServlet {
 		}
 		
 		try {
-			database.ecritureBase( nom, prenom, email, telephone, region, fumeur, parking, animal, nbrePersonnes, jourArrivee, nuitees);
+			database.ecritureBase(nom, prenom, email, telephone, region, parking, animal, fumeur, nbrePersonnes, jourArrivee, nuitees);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
