@@ -18,6 +18,7 @@
 	<table border="1" class="resaTable">
 		<tr>
 			<th>Id Résa</th>
+			<th>dateResa</th>
 			<th>Nom</th>
 			<th>Prénom</th>
 			<th>email</th>
@@ -44,8 +45,9 @@
 				<td><%=serveur.getNom()%></td>
 				<td><%=serveur.getPrenom()%></td>
 				<td><%=serveur.getEmail()%></td>
+				<td><%=serveur.getTelephone()%></td>
 				<td><%=serveur.getRegion()%></td>
-				<td><%=serveur.getParking() %></td>
+				<td><%=serveur.getParking()%></td>
 				<td><%=serveur.getAnimal()%></td>
 				<td><%=serveur.getFumeur()%></td>
 				<td><%=serveur.getNbrePersonnes()%></td>

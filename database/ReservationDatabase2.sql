@@ -2,7 +2,7 @@
 -- -----------------------------------------------------
 -- Table `mydb`.`ListeReservations`
 -- -----------------------------------------------------
-CREATE TABLE ListeReservation (
+CREATE TABLE ListeReservations (
   `idListeReservations` INT NOT NULL AUTO_INCREMENT,
   `nom` VARCHAR(45) NULL,
   `prenom` VARCHAR(45) NULL,
@@ -16,4 +16,3 @@ CREATE TABLE ListeReservation (
   `jourArrivee` VARCHAR(8) NULL,
   `nuitees` VARCHAR(2) NULL,
   PRIMARY KEY (`idListeReservations`));
-

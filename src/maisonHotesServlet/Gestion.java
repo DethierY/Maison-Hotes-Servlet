@@ -1,6 +1,7 @@
 package maisonHotesServlet;
 
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,6 +26,8 @@ public class Gestion extends HttpServlet {
         super();
         // TODO Auto-generated constructor stub
     }
+    
+    DatabaseReservation database = new DatabaseReservation ();
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
@@ -73,6 +76,20 @@ public class Gestion extends HttpServlet {
 		
 		request.setAttribute("newClient", newClient);
 		getServletContext().getRequestDispatcher("/ResumeReservation.jsp").forward(request, response);
+		try {
+			database.connectionBase();
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		try {
+			database.ecritureBase( nom, prenom, email, telephone, region, fumeur, parking, animal, nbrePersonnes, jourArrivee, nuitees);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 	}
 	
 	private String checkBox (String choixCheckBox) {
